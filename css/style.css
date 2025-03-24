@@ -1004,8 +1004,12 @@ p {
     .single_service:hover .service_icon i {
       background-color: #fff;
       color: #00A78E; }
+      
+    .page-scroll:hover .single_service .service_content h4,
     .single_service:hover .service_content .service_title a {
       color: #fff; }
+
+    .page-scroll:hover .single_service .service_content p,
     .single_service:hover .service_content p {
       color: #fff; }
 
