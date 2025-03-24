@@ -1070,7 +1070,7 @@ p {
   right: 0; }
 
 .single_price {
-  padding: 40px 50px 50px;
+  padding: 40px 30px 50px;
   border-radius: 5px;
   -webkit-box-shadow: 0px 0px 10px 0px rgba(196, 196, 196, 0.3);
   -moz-box-shadow: 0px 0px 10px 0px rgba(196, 196, 196, 0.3);
@@ -1107,14 +1107,23 @@ p {
     .single_price .price_header .price_title {
       font-size: 25px;
       font-weight: 600; }
-    .single_price .price_header .price {
-      font-size: 35px;
-      line-height: 40px;
-      color: #00A78E;
-      font-weight: 600;
-      margin-top: 15px; }
+      .single_price .price_header .price {
+        font-size: 35px;
+        line-height: 40px;
+        color: #00A78E;
+        font-weight: 600;
+        margin-top: 15px; }
+
+        
+    .single_price .price_header .price.big-price {
+      font-size: 25px;
+     }
+      span.currency {
+        font-size: 18px;
+        color: #646F87;
+    }
     .single_price .price_header p {
-      margin-top: 10px; }
+      margin-top: 0px; }
   .single_price .price_body {
     padding-top: 15px; }
     .single_price .price_body ul li {
@@ -1126,7 +1135,11 @@ p {
   .single_price .price_btn {
     margin-top: 30px; }
     .single_price .price_btn .main-btn {
-      border-radius: 50px; }
+      border-radius: 50px;
+      display: block;
+      margin: auto;
+      width: 80%;
+    }
 
 /*===========================
      07.TESTIMONIAL css 
