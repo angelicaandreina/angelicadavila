@@ -1257,7 +1257,11 @@ p {
 
 .slick-initialized .slick-slide {
   outline: 0; }
-
+  #seminars > div.container > div.row.project_active.justify-content-center.slick-initialized.slick-slider > div > div {
+    display: flex;
+    justify-content: center;
+  }
+  
   .slick-slide, .animation-scale {
     transition: transform 300ms ease 0ms, background-color 300ms ease 0ms, background-image 300ms ease 0ms;
     -webkit-transition: transform 300ms ease 0ms, background-color 300ms ease 0ms, background-image 300ms ease 0ms;
