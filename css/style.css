@@ -35,6 +35,14 @@ body {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
+  :root {
+    --color-morado: #D9BEDB;  /* morado */
+    --color-verde: #A3D5D8; /* Verde */
+    --color-blanco: #ffffff;      /* Blanco */
+    --border-radius: 30px; /* Border Radius */
+  }
+  
+
 img {
   max-width: 100%; }
 
@@ -132,7 +140,7 @@ p {
   font-size: 16px;
   line-height: 55px;
   height: 55px;
-  border-radius: 30px;
+  border-radius: var(--border-radius);
   color: #fff;
   cursor: pointer;
   z-index: 5;
@@ -264,6 +272,7 @@ p {
       border-style: solid;
       /* Spinner Color */
       border-color: #00A78E #00A78E #eceff8;
+      /* cambio color spinner*/
       border-radius: 50%;
       border-width: 6px; }
     .preloader .loader .ytp-spinner-left .ytp-spinner-circle {
@@ -788,7 +797,11 @@ p {
         font-size: 16px; } }
     .header_social li a:hover {
       color: #00A78E; }
-
+.header_social li a img {
+  width: 20px;
+  height: 20px; 
+}
+  
 .header_hero_shape {
   position: absolute;
   top: 0;
@@ -848,6 +861,18 @@ p {
 /*===========================
         03.ABOUT css 
 ===========================*/
+.card-service {
+  padding: 30px 40px;
+  border-radius: var(--border-radius);
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(196, 196, 196, 0.3);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(196, 196, 196, 0.3);
+  box-shadow: 0px 0px 10px 0px rgba(196, 196, 196, 0.3);
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+  background-color: #fff; }
 .about_image {
   position: relative; }
   .about_image img {
@@ -955,7 +980,7 @@ p {
 .single_service {
   height: 360px;
   padding: 30px;
-  border-radius: 30px;
+  border-radius: var(--border-radius);
   -webkit-box-shadow: 0px 0px 10px 0px rgba(196, 196, 196, 0.3);
   -moz-box-shadow: 0px 0px 10px 0px rgba(196, 196, 196, 0.3);
   box-shadow: 0px 0px 10px 0px rgba(196, 196, 196, 0.3);
@@ -1092,7 +1117,7 @@ p {
 
 .single_price {
   padding: 40px 30px 50px;
-  border-radius: 30px;
+  border-radius: var(--border-radius);
   -webkit-box-shadow: 0px 0px 10px 0px rgba(196, 196, 196, 0.3);
   -moz-box-shadow: 0px 0px 10px 0px rgba(196, 196, 196, 0.3);
   box-shadow: 0px 0px 10px 0px rgba(196, 196, 196, 0.3);
@@ -1125,8 +1150,8 @@ p {
     -o-transform: rotate(45deg);
     transform: rotate(45deg);
     position: absolute;
-    top: 18px;
-    right: -150px;
+    top: 17px;
+    right: -148px;
     width: 100%; }
     @media (max-width: 767px) {
       .single_price .sticker {
@@ -1178,7 +1203,7 @@ p {
   .single_price .price_btn {
     margin-top: 30px; }
     .single_price .price_btn .main-btn {
-      border-radius: 30px;
+      border-radius: var(--border-radius);
       display: block;
       margin: auto;
       width: 80%;
@@ -1193,12 +1218,12 @@ p {
   @media (max-width: 767px) {
     .single_testimonial .testimonial_author img {
       width: 120px;
-      border-radius: 30px;
+      border-radius: var(--border-radius);
       border-bottom-right-radius: 0; } }
   @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .single_testimonial .testimonial_author img {
       width: 120px;
-      border-radius: 30px;
+      border-radius: var(--border-radius);
       border-bottom-right-radius: 0; } }
 .single_testimonial .testimonial_content {
   padding-left: 30px;
@@ -1261,7 +1286,7 @@ p {
     display: flex;
     justify-content: center;
   }
-  
+
   .slick-slide, .animation-scale {
     transition: transform 300ms ease 0ms, background-color 300ms ease 0ms, background-image 300ms ease 0ms;
     -webkit-transition: transform 300ms ease 0ms, background-color 300ms ease 0ms, background-image 300ms ease 0ms;
@@ -1445,7 +1470,9 @@ p {
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.06; }
-
+  .call_to_action_wrapper div div{
+    border-radius: var(--border-radius);
+  }
 .call_to_action_box {
   background-color: #00A78E;
   padding: 30px 60px 60px;
@@ -1473,11 +1500,11 @@ p {
     opacity: 0.1;
     z-index: -1; }
   .call_to_action_box .call_to_action_content {
-    max-width: 520px;
+    max-width: 610px;
     margin-top: 25px; }
     .call_to_action_box .call_to_action_content .action_title {
       color: #fff;
-      font-size: 35px;
+      font-size: 34px;
       font-weight: 600; }
       @media only screen and (min-width: 768px) and (max-width: 991px) {
         .call_to_action_box .call_to_action_content .action_title {
@@ -1563,5 +1590,34 @@ p {
       @media (max-width: 767px) {
         .footer_content .footer_menu li a {
           font-size: 15px; } }
-
+.footer_social li a img {
+  width: 20px;
+  height: 20px; 
+}
+          
 /*# sourceMappingURL=style.css.map */
+
+
+section#about {
+  background-image: url('../images/background-morado-verde.svg');
+  background-size: cover;
+}
+
+section#marketing,
+section#linkedin,
+section#video {
+  background-image: url('../images/background-morado.svg');
+  background-size: cover;
+}
+
+section#design,
+section#website,
+section#seminars {
+  background-image: url('../images/background-verde.svg');
+  background-size: cover;
+}
+
+section#contact {
+  background-image: url('../images/background-morado-verde.svg');
+  background-size: cover;
+}
