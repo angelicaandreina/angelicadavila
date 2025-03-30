@@ -516,6 +516,10 @@ p {
 .navbar-brand {
   padding: 0; }
 
+.navbar-brand img{
+  height: 40px;
+}
+
 .navbar-toggler {
   padding: 0; }
   .navbar-toggler .toggler-icon {
@@ -1504,6 +1508,9 @@ p {
 /*===========================
       11.FOOTER css 
 ===========================*/
+.footer_content a img {
+  height: 80px;
+}
 .footer_content .footer_social {
   margin-top: 45px; }
   .footer_content .footer_social li {
