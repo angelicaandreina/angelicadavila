@@ -1125,8 +1125,8 @@ p {
     -o-transform: rotate(45deg);
     transform: rotate(45deg);
     position: absolute;
-    top: 25px;
-    right: -136px;
+    top: 18px;
+    right: -150px;
     width: 100%; }
     @media (max-width: 767px) {
       .single_price .sticker {
@@ -1136,7 +1136,7 @@ p {
     border-bottom: 1px solid rgba(100, 111, 135, 0.26);
     padding-bottom: 30px; }
     .single_price .price_header .price_title {
-      font-size: 25px;
+      font-size: 24px;
       font-weight: 600; }
       .single_price .price_header .price {
         font-size: 35px;
@@ -1144,6 +1144,9 @@ p {
         color: #00A78E;
         font-weight: 600;
         margin-top: 15px; }
+    .single_price .price_header .price.no-top {
+      margin-top: 0px;
+    }
 
         
     .single_price .price_header .price.big-price {
