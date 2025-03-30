@@ -132,7 +132,7 @@ p {
   font-size: 16px;
   line-height: 55px;
   height: 55px;
-  border-radius: 5px;
+  border-radius: 30px;
   color: #fff;
   cursor: pointer;
   z-index: 5;
@@ -951,7 +951,7 @@ p {
 .single_service {
   height: 360px;
   padding: 30px;
-  border-radius: 5px;
+  border-radius: 30px;
   -webkit-box-shadow: 0px 0px 10px 0px rgba(196, 196, 196, 0.3);
   -moz-box-shadow: 0px 0px 10px 0px rgba(196, 196, 196, 0.3);
   box-shadow: 0px 0px 10px 0px rgba(196, 196, 196, 0.3);
@@ -1034,7 +1034,7 @@ p {
   margin-top: 30px; }
   .single_project .project_image img {
     width: 100%;
-    border-radius: 5px; }
+    border-radius: 30px; }
   .single_project .project_content {
     margin-top: 25px; }
     .single_project .project_content .project_title a {
@@ -1086,13 +1086,16 @@ p {
 
 .single_price {
   padding: 40px 30px 50px;
-  border-radius: 5px;
+  border-radius: 30px;
   -webkit-box-shadow: 0px 0px 10px 0px rgba(196, 196, 196, 0.3);
   -moz-box-shadow: 0px 0px 10px 0px rgba(196, 196, 196, 0.3);
   box-shadow: 0px 0px 10px 0px rgba(196, 196, 196, 0.3);
   background-color: #fff;
   position: relative;
   overflow: hidden; }
+  .single_price p {
+    margin-top: 20px;
+  }
   @media (max-width: 767px) {
     .single_price {
       padding: 30px; } }
@@ -1147,10 +1150,16 @@ p {
       color: #646F87; }
       .single_price .price_body ul li i {
         margin-right: 10px; }
+
+        .single_price .price_body ul li span {
+          display: contents;
+          font-weight: bold;
+        }
+
   .single_price .price_btn {
     margin-top: 30px; }
     .single_price .price_btn .main-btn {
-      border-radius: 50px;
+      border-radius: 30px;
       display: block;
       margin: auto;
       width: 80%;
@@ -1229,6 +1238,14 @@ p {
 
 .slick-initialized .slick-slide {
   outline: 0; }
+
+  .slick-slide, .animation-scale {
+    transition: transform 300ms ease 0ms, background-color 300ms ease 0ms, background-image 300ms ease 0ms;
+    -webkit-transition: transform 300ms ease 0ms, background-color 300ms ease 0ms, background-image 300ms ease 0ms;
+  }
+  .slick-slide:hover, .animation-scale:hover {
+    transform: scaleX(1.03) scaleY(1.03) !important;
+  }
 
 /*===========================
      08.COUNTER css 
