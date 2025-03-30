@@ -1034,7 +1034,9 @@ p {
   margin-top: 30px; }
   .single_project .project_image img {
     width: 100%;
-    border-radius: 30px; }
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgb(1 167 142 / 24%);
+  }
   .single_project .project_content {
     margin-top: 25px; }
     .single_project .project_content .project_title a {
