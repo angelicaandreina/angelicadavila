@@ -21,9 +21,8 @@
 /*===========================
       01.COMMON css 
 ===========================*/
-@import url("./css%3Ffamily=Montserrat:300,400,500,600,700,800|Open+Sans:400,600,700&display=swap.css");
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: normal;
   font-style: normal;
   color: #646F87; }
@@ -39,10 +38,120 @@ body {
     --color-morado: #D9BEDB;  /* morado */
     --color-verde: #A3D5D8; /* Verde */
     --color-blanco: #ffffff;      /* Blanco */
+    --color-rojo: #F2505D;
+    --color-negro: #000000;
     --border-radius: 30px; /* Border Radius */
   }
   
+  .poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .poppins-extrabold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .poppins-thin-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .poppins-extralight-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  .poppins-light-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .poppins-regular-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .poppins-medium-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .poppins-semibold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .poppins-bold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .poppins-extrabold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+  }
+  
+  .poppins-black-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
 
+  
 img {
   max-width: 100%; }
 
@@ -79,7 +188,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
   color: #293651;
   margin: 0px; }
@@ -1312,13 +1421,13 @@ p {
     font-size: 35px;
     font-weight: 600;
     color: #00A78E;
-    font-family: "Montserrat", sans-serif; }
+    font-family: "Poppins", sans-serif; }
     @media (max-width: 767px) {
       .single_counter .counter_content .count {
         font-size: 30px; } }
   .single_counter .counter_content p {
     font-weight: 600;
-    font-family: "Montserrat", sans-serif; }
+    font-family: "Poppins", sans-serif; }
 
 /*===========================
    09.WORK EXPERIENCE css 
