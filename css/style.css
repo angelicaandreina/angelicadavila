@@ -39,6 +39,7 @@ body {
     --color-verde: #A3D5D8; /* Verde */
     --color-blanco: #ffffff;      /* Blanco */
     --color-rojo: #F2505D;
+    --color-rojo-hover: #f2505dab;
     --color-negro: #000000;
     --border-radius: 30px; /* Border Radius */
   }
@@ -258,14 +259,14 @@ p {
   -ms-transition: all 0.4s ease-out 0s;
   -o-transition: all 0.4s ease-out 0s;
   transition: all 0.4s ease-out 0s;
-  background-color: #00A78E; }
+  background-color: var(--color-rojo); }
   @media (max-width: 767px) {
     .main-btn {
       padding: 0 30px;
       height: 45px;
       line-height: 45px; } }
   .main-btn:hover {
-    background-color: rgba(0, 167, 142, 0.7);
+    background-color: var(--color-rojo-hover);
     color: #fff; }
   .main-btn.main-btn-2 {
     background-color: transparent;
@@ -283,7 +284,7 @@ p {
 .section_title .sub_title {
   font-size: 20px;
   font-weight: 600;
-  color: #00A78E; }
+  color: var(--color-rojo); }
   @media (max-width: 767px) {
     .section_title .sub_title {
       font-size: 16px; } }
@@ -859,7 +860,7 @@ p {
 .sticky .navbar-nav .nav-item a {
   color: #293651; }
 .sticky .navbar-nav .nav-item.active > a, .sticky .navbar-nav .nav-item:hover > a {
-  color: #00A78E; }
+  color: var(--color-rojo); }
 
 /*===== HEADER HERO =====*/
 .header_hero {
@@ -935,7 +936,7 @@ p {
 .header_hero_content .header_sub_title {
   font-size: 30px;
   font-weight: 600;
-  color: #00A78E;
+  color: var(--color-rojo);
   letter-spacing: 4px; }
   @media (max-width: 767px) {
     .header_hero_content .header_sub_title {
@@ -1249,7 +1250,7 @@ p {
   .single_price .sticker {
     display: block;
     font-size: 13px;
-    background-color: #00A78E;
+    background-color: var(--color-rojo);
     line-height: 30px;
     color: #fff;
     text-align: center;
@@ -1377,7 +1378,7 @@ p {
       font-size: 0;
       width: 13px;
       height: 13px;
-      border: 2px solid rgba(0, 167, 142, 0.43);
+      border: 2px solid var(--color-rojo-hover);
       border-radius: 50%;
       background: none;
       -webkit-transition: all 0.3s ease-out 0s;
@@ -1386,8 +1387,8 @@ p {
       -o-transition: all 0.3s ease-out 0s;
       transition: all 0.3s ease-out 0s; }
     .testimonial_active .slick-dots li.slick-active button {
-      background-color: #00A78E;
-      border-color: #00A78E; }
+      background-color: var(--color-rojo);
+      border-color: var(--color-rojo); }
 
 .slick-initialized .slick-slide {
   outline: 0; }
