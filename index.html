@@ -210,9 +210,8 @@
                                 Ofrezco soluciones integrales de <strong>marketing digital, branding y gestión de redes
                                     sociales</strong> para que tu marca crezca y se destaque en el mercado.
                             </p>
-                            <a href="https://calendar.app.google/oAFShc2LQvxWrpfr7" target="_blank"
-                                class="main-btn wow fadeInUp animation-scale" data-wow-duration="1.3s"
-                                data-wow-delay="1.4s">AGENDA UNA CONSULTA</a>
+                            <button type="button" class="main-btn wow fadeInUp animation-scale trigger-calendar no-border"
+                                data-wow-duration="1.3s" data-wow-delay="1.4s">AGENDA UNA CONSULTA</button>
                         </div> <!-- header hero content -->
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-7">
@@ -1406,8 +1405,7 @@
                             </div> <!-- call to action content -->
 
                             <div class="call_to_action_btn">
-                                <a href="https://calendar.app.google/oAFShc2LQvxWrpfr7" target="_blank"
-                                    class="main-btn">AGENDA UNA CONSULTA</a>
+                                <button type="button" class="main-btn trigger-calendar">AGENDA UNA CONSULTA</button>
                             </div> <!-- call to action btn -->
                         </div> <!-- call to action box -->
                     </div>
@@ -1513,6 +1511,45 @@
     <script>(function () { function c() { var b = a.contentDocument || a.contentWindow.document; if (b) { var d = b.createElement('script'); d.innerHTML = "window.__CF$cv$params={r:'92042a9b598287d6',t:'MTc0MTk1OTQ1NC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);"; b.getElementsByTagName('head')[0].appendChild(d) } } if (document.body) { var a = document.createElement('iframe'); a.height = 1; a.width = 1; a.style.position = 'absolute'; a.style.top = 0; a.style.left = 0; a.style.border = 'none'; a.style.visibility = 'hidden'; document.body.appendChild(a); if ('loading' !== document.readyState) c(); else if (window.addEventListener) document.addEventListener('DOMContentLoaded', c); else { var e = document.onreadystatechange || function () { }; document.onreadystatechange = function (b) { e(b); 'loading' !== document.readyState && (document.onreadystatechange = e, c()) } } } })();</script>
     <script>
         document.documentElement.style.colorScheme = "light";
+    </script>
+
+    <!-- Google Calendar Appointment Scheduling begin -->
+    <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+    <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+    <script>
+        (function () {
+            var target = document.currentScript;
+            window.addEventListener('load', function () {
+                calendar.schedulingButton.load({
+                    url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ01LSGAzyvKM5pl4svs7T862y7kFLfe_8IzaWNF58QlMKrAK7OLUtQyr5KIltEKY5UXGK9gfkNl?gv=true',
+                    color: '#039BE5',
+                    label: 'Book an appointment',
+                    target,
+                });
+            });
+        })();
+    </script>
+    <!-- end Google Calendar Appointment Scheduling -->
+
+    <script>
+       document.addEventListener("DOMContentLoaded", function() {
+    const triggerButtons = document.querySelectorAll(".trigger-calendar");
+
+    const observer = new MutationObserver(mutations => {
+        const targetButton = document.querySelector(".qxCTlb");
+        if (targetButton) {
+            triggerButtons.forEach(button => {
+                button.addEventListener("click", function() {
+                    targetButton.click();
+                });
+            });
+            observer.disconnect(); // Detener la observación cuando se encuentra el botón
+        }
+    });
+
+    observer.observe(document.body, { childList: true, subtree: true });
+});
+
     </script>
 </body>
 
