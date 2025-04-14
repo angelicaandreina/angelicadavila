@@ -210,7 +210,8 @@
                                 Ofrezco soluciones integrales de <strong>marketing digital, branding y gestión de redes
                                     sociales</strong> para que tu marca crezca y se destaque en el mercado.
                             </p>
-                            <button type="button" class="main-btn wow fadeInUp animation-scale trigger-calendar no-border"
+                            <button type="button"
+                                class="main-btn wow fadeInUp animation-scale trigger-calendar no-border"
                                 data-wow-duration="1.3s" data-wow-delay="1.4s">AGENDA UNA CONSULTA</button>
                         </div> <!-- header hero content -->
                     </div>
@@ -295,9 +296,10 @@
 
                             <p>Si tu marca aún no refleja todo su potencial, trabajemos juntos para llevarla al
                                 siguiente nivel.</p>
-                            <a href="https://calendar.app.google/gDd79raZdQDAufnj7" target="_blank"
-                                class="main-btn wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="1.4s">AGENDA UNA
-                                CONSULTA</a>
+
+                            <button type="button"
+                                class="main-btn wow fadeInUp animation-scale trigger-calendar no-border"
+                                data-wow-duration="1.3s" data-wow-delay="1.4s">AGENDA UNA CONSULTA</button>
 
                         </div> <!-- about skill -->
                     </div> <!-- about content -->
@@ -1532,23 +1534,23 @@
     <!-- end Google Calendar Appointment Scheduling -->
 
     <script>
-       document.addEventListener("DOMContentLoaded", function() {
-    const triggerButtons = document.querySelectorAll(".trigger-calendar");
+        document.addEventListener("DOMContentLoaded", function () {
+            const triggerButtons = document.querySelectorAll(".trigger-calendar");
 
-    const observer = new MutationObserver(mutations => {
-        const targetButton = document.querySelector(".qxCTlb");
-        if (targetButton) {
-            triggerButtons.forEach(button => {
-                button.addEventListener("click", function() {
-                    targetButton.click();
-                });
+            const observer = new MutationObserver(mutations => {
+                const targetButton = document.querySelector(".qxCTlb");
+                if (targetButton) {
+                    triggerButtons.forEach(button => {
+                        button.addEventListener("click", function () {
+                            targetButton.click();
+                        });
+                    });
+                    observer.disconnect(); // Detener la observación cuando se encuentra el botón
+                }
             });
-            observer.disconnect(); // Detener la observación cuando se encuentra el botón
-        }
-    });
 
-    observer.observe(document.body, { childList: true, subtree: true });
-});
+            observer.observe(document.body, { childList: true, subtree: true });
+        });
 
     </script>
 </body>
